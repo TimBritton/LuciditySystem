@@ -1,0 +1,143 @@
+{
+    "Actor": {
+        "types": [
+            "character"
+        ],
+        "templates": {
+            "background": {
+                "biography": ""
+            },
+            "stress": {
+                "physical": {
+                    "track_1": {
+                        "min": 0,
+                        "max": 5
+                    },
+                    "track_2": {
+                        "min": 0,
+                        "max": 5
+                    },
+                    "track_3": {
+                        "min": 0,
+                        "max": 5
+                    }
+                },
+                "mental": {
+                    "track_1": {
+                        "min": 0,
+                        "max": 5
+                    },
+                    "track_2": {
+                        "min": 0,
+                        "max": 5
+                    },
+                    "track_3": {
+                        "min": 0,
+                        "max": 5
+                    }
+                },
+                "emotional": {
+                    "track_1": {
+                        "min": 0,
+                        "max": 5
+                    },
+                    "track_2": {
+                        "min": 0,
+                        "max": 5
+                    },
+                    "track_3": {
+                        "min": 0,
+                        "max": 5
+                    }
+                }
+            },
+            "stats": {
+                "brawn": {
+                  "min": 0,
+                  "max": 6,
+                  "value":3
+                },
+                "whit": {
+                  "min": 0,
+                  "max": 6,
+                  "value":3
+                },
+                "reflex": {
+                  "min": 0,
+                  "max": 6,
+                  "value":3
+                },
+                "composure": {
+                  "min": 0,
+                  "max": 6,
+                  "value":3
+                },
+                "tact": {
+                  "min": 0,
+                  "max": 6,
+                  "value":3
+                },
+                "grit": {
+                  "min": 0,
+                  "max": 6,
+                  "value":3
+                }
+            }
+        },
+        "character": {
+            "templates": [
+                "background",
+                "stress",
+                "stats"
+            ],
+            "plot_die": {
+                "value": 3,
+                "max": 10
+            }
+        }
+        
+    },
+    "Item": {
+        "types": [
+            "boon",
+            "bust",
+            "item",
+            "aspect"
+        ],
+        "templates": {
+            "description": {
+                "value": ""
+            },
+            "level": {
+                "value": 0
+            }
+        },
+        "boon": {
+            "templates": [
+                "description",
+                "level"
+            ],
+            "asc_stat": ""
+        },
+        "bust": {
+            "templates": [
+                "description",
+                "level"
+            ],
+            "asc_stat": ""
+        },
+        "item": {
+            "templates": [
+                "description",
+                "level"
+            ]
+        },
+        "aspect": {
+            "templates": [
+                "description",
+                "level"
+            ],
+            "owner": ""
+        }
+    }
+}
