@@ -4,18 +4,18 @@
         <div class="header-fields">
             <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name" /></h1>
             <div class="resource">
-                <label>Quantity</label>
-                <input type="text" name="data.quantity" value="{{data.quantity}}" data-dtype="Number" />
+                <label>Boon Stat</label>
+                <input type="text" name="item.asc_stat" value="{{item.asc_stat}}" data-dtype="String" />
             </div>
             <div class="resource">
-                <label>Weight</label>
-                <input type="text" name="data.weight" value="{{data.weight}}" data-dtype="Number" />
+                <label>Level</label>
+                <input type="text" name="item.level.value" value="{{item.level.value}}" data-dtype="Number" />
             </div>
         </div>
     </header>
 
     {{!-- Sheet Body --}}
     <section class="sheet-body">
-            {{editor content=item.description.value target="data.description.value" button=true owner=owner editable=editable}}
+            {{editor content=item.description.value target="item.description.value" button=true owner=owner editable=editable}}
     </section>
 </form>
