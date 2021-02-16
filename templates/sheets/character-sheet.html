@@ -279,7 +279,7 @@
     {{!-- Sheet Body --}}
     <section class="sheet-body">
 
-        {{!-- Biography Tab --}}
+        {{!-- Stress Tab --}}
         <div class="tab stress" data-group="primary" data-tab="description">
             {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
         </div>
@@ -311,7 +311,7 @@
                     <h4 class="item-name">{{item.name}}</h4>
                     {{!-- Iterate through all attributes on the item and output buttons for any that are formula. --}}
                     <div class="item-buttons">
-                        {{#each item.data.attributes as |itemAttr key|}}
+                        <!-- {{#each item.data.attributes as |itemAttr key|}}
                         {{#if itemAttr.dtype}}
                             {{#if itemAttr.isFormula}}
                                 {{!-- Use the items.name.key format for shorthand. --}}
@@ -341,7 +341,7 @@
                                 {{/if}}
                             {{/each}}
                         {{/if}}
-                        {{/each}}
+                        {{/each}} -->
                     </div>
                     <div class="item-controls">
                         <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
